@@ -180,7 +180,7 @@ export default {
     async fetchData() {
       try {
         this.loading = true;
-        const response = await fetch("../../satellites.json");
+        const response = await fetch("src/assets/satellites.json");
         this.data = await response.json();
       } catch (error) {
         console.error(error);

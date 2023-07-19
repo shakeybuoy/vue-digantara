@@ -4,7 +4,7 @@
       <img :src="imageUrl" :alt="item.name" />
     </div>
     <div class="image" v-else>
-      <img src="../../placeholder.jpg" alt="placeholder" />
+      <img src="/placeholder.jpg" alt="placeholder" />
     </div>
     <div class="card-text">
       <h3>{{ item.name ? item.name : "Not Available" }}</h3>

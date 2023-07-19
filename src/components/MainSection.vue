@@ -75,6 +75,7 @@
 <script>
 import SatelliteCard from "./SatelliteCard.vue";
 import Loading from "./Loading.vue";
+
 export default {
   name: "Landing",
   components: {
@@ -180,7 +181,7 @@ export default {
     async fetchData() {
       try {
         this.loading = true;
-        const response = await fetch("src/assets/satellites.json");
+        const response = await fetch('/data/satellites.json');
         this.data = await response.json();
       } catch (error) {
         console.error(error);
